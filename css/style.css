@@ -1,0 +1,539 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STRONA GŁÓWNA */
+
+.logo {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+html{
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+nav{
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1440px;
+
+}
+
+
+
+nav a{
+  font-size: 1.8rem;
+  display: inline-block;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 0 20px;
+
+}
+
+
+header{
+  background-image: url(/img/img2.jpg);
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+
+}
+
+.aktualnosci {
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  height: 300px;
+}
+
+.aktualnosci {
+  font-size: 25px;
+  text-align: center;
+}
+
+div.feature{
+  display: inline-block;
+  width: 40%;
+  margin-left: 120px;
+  text-align: center;
+}
+
+div.feature h2 {
+  font-size: 30px;
+  color: white;
+}
+
+
+div.image{
+  height: 200px;
+  background-color:black;
+  margin: 20px 30px;
+
+}
+
+
+.socials {
+  width: 100%;
+  text-align: center;
+}
+
+.socials h2 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+
+/* AKTUALNOSCI */
+
+.aktualnosci_Aktualnosci {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.news {
+  color: black;
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 100px;
+  height: 100px;
+  text-align: center;
+  
+}
+
+.przycisk {
+  text-align: right;
+
+}
+
+.button {
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+/* TABELA */
+
+.tabelaTabela {
+  background-color: white;
+  width: 40%;
+  height: 500px;
+  color: black;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 250px;
+  text-align: center;
+  display: inline-block;
+}
+
+.tabelaTabela h2 {
+  font-size: 30px;
+} 
+
+.strzelcyTabela {
+  width: 25%;
+  height: 400px;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+
+.strzelcyTabela h2 {
+  font-size: 30px;
+}
+
+/* HISTORIA */
+
+
+
+.zwyciezcyHistoria {
+  color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.zwyciezcyHistoria h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.zwyciezcyHistoria p {
+  font-size: 15px;
+}
+
+.strzelcyHistoria {
+  color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.strzelcyHistoria h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.strzelcyHistoria p {
+  font-size: 15px;
+}
+
+
+/* KONTAKT */
+
+.adminKontakt {
+  margin-left: 800px;
+  width: 50%;
+  color: white;
+}
+
+.adminKontakt h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.adminKontakt p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.wynajemKontakt{
+  margin-left: 800px;
+  width: 50%;
+  color: white;
+}
+
+.wynajemKontakt h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.wynajemKontakt h4 {
+  font-size: 25px;
+}
+
+.wynajemKontakt p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.sedziowieKontakt{
+  margin-left: 800px;
+  width: 50%;
+  color: white;
+}
+
+.sedziowieKontakt h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sedziowieKontakt h4 {
+  font-size: 25px;
+}
+
+.sedziowieKontakt p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+/* LOGOWANIE */
+
+.box {
+  width: 450px;
+  padding: 40px;
+  position: absolute;
+  border: 0px solid black;
+  border-radius: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  text-align: center;
+}
+
+.box h1 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box input[type = "text"],.box input[type = "password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid black ;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: black ;
+
+}
+
+.box input[type = "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid black ;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type = "submit"]:hover {
+  background: white;
+}
+
+a.signin {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* REJESTRACJA */
+
+.box {
+  width: 450px;
+  padding: 40px;
+  position: absolute;
+  border: 0px solid black;
+  border-radius: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  text-align: center;
+}
+
+.box h1 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box input[type = "text"],.box input[type = "password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid black ;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: black ;
+
+}
+
+.box input[type = "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid black ;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type = "submit"]:hover {
+  background: white;
+}
+
+/* PANEL ADMINA */
+
+.h1Admin {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.przyciskAdmin button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 300px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  
+}
+
+/* PANEL UZYTKOWNIKA */
+
+.fotoUzy {
+  display: inline-block;
+}
+
+.imgUzytkownik {
+  margin-left: 50px;
+}
+
+.daneUzytkownika {
+  display: inline-block;
+  color: white;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+.buttonUzy {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  margin-left: 500px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* DODAJ POST */
+
+.tekstPost {
+  background-color: white;
+  width: 75%;
+  height: 500px;
+  margin: auto;
+}
+
+.tekstPost p {
+  font-size: 15px;
+  color: gray;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.buttonPost {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  margin-left: 1500px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+/* AKTUALIZACJA HISTORII */
+
+.tekstAktuHist {
+  background-color: white;
+  width: 40%;
+  height: 500px;
+  margin: auto;
+}
+
+.tekstAktuHist p {
+  font-size: 15px;
+  color: gray;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.buttonAktu {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  margin-left: 1200px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* ZARZĄDZANIE UŻYTKOWNIKIEM  */
+
+.h1WysUzy {
+  margin-bottom: 20px;
+}
+
+.wyszukajUzy {
+  text-align: left;
+}
+
+.buttonWys {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  margin-left: 865px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+
+
