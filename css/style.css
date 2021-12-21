@@ -217,7 +217,7 @@ div.image{
 /* KONTAKT */
 
 .adminKontakt {
-  margin-left: 800px;
+  margin: auto;
   width: 50%;
   color: white;
 }
@@ -233,7 +233,7 @@ div.image{
 }
 
 .wynajemKontakt{
-  margin-left: 800px;
+  margin: auto;
   width: 50%;
   color: white;
 }
@@ -254,7 +254,7 @@ div.image{
 }
 
 .sedziowieKontakt{
-  margin-left: 800px;
+  margin: auto;
   width: 50%;
   color: white;
 }
