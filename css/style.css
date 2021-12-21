@@ -46,7 +46,7 @@ nav a{
 
 
 header{
-  background-image: url(/img/img2.jpg);
+  background-image: url(../img/img2.jpg);
   height: 40vh;
   background-size: cover;
   background-position: center;
