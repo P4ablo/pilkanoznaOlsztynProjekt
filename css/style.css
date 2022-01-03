@@ -58,7 +58,7 @@ header{
   background-color: white;
   margin: auto;
   width: 50%;
-  height: 300px;
+  min-height: 300px;
 }
 
 .aktualnosci {
@@ -80,7 +80,7 @@ div.feature h2 {
 
 
 div.image{
-  height: 200px;
+  min-height: 200px;
   background-color:black;
   margin: 20px 30px;
 
@@ -125,7 +125,7 @@ div.image{
   margin: auto;
   width: 50%;
   margin-bottom: 100px;
-  height: 100px;
+  min-height: 100px;
   text-align: center;
   
 }
@@ -153,7 +153,7 @@ div.image{
 .tabelaTabela {
   background-color: white;
   width: 40%;
-  height: 500px;
+  min-height: 500px;
   color: black;
   margin-top: 50px;
   margin-left: 100px;
@@ -168,7 +168,7 @@ div.image{
 
 .strzelcyTabela {
   width: 25%;
-  height: 400px;
+  min-height: 400px;
   background-color: white;
   color: black;
   display: inline-block;
