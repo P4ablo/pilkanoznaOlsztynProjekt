@@ -42,10 +42,10 @@ session_start();
 
     <h1 class="h1Admin">Panel Administratora</h1>
     <div class="przyciskAdmin">
-        <a><button class="button">Dodaj Post</button></a><br>
-        <a><button class="button">Tabela</button></a><br>
-        <a><button class="button">Historia</button></a><br>
-        <a><button class="button">Zarządzanie Drużynami</button></a><br>
-        <a><button class="button">Zarządzaj Zawodnikiem</button></a><br>
+        <a href="dodajPost.php"><button class="button">Dodaj Post</button></a><br>
+        <a href="zarzadzanieTabela.php"><button class="button">Tabela</button></a><br>
+        <a href="zarzadzanieHistoria.php"><button class="button">Historia</button></a><br>
+        <a href="zarzadzanieDruzynami.php"><button class="button">Zarządzanie Drużynami</button></a><br>
+        <a href="zarzadzanieUzytkownikiem.php"><button class="button">Zarządzaj Zawodnikiem</button></a><br>
     </div>
 </body>
