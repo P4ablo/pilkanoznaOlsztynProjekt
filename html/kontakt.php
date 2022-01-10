@@ -1,3 +1,7 @@
+<?php
+session_start();
+error_reporting(E_ERROR | E_PARSE);
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -13,14 +17,28 @@
 </head>
 <body>
     <a href="#" class="logo"><h1>pilkaolsztyn.pl</h1></a>
-    <nav>
-        <a href="../html/index.html">Strona Główna</a>
-        <a href="../html/aktualnosci.html">Aktualności</a>
-        <a href="../html/tabela.html">Tabela</a>
-        <a href="../html/historia.html">Historia</a>
-        <a href="../html/kontakt.html">Kontakt</a>
-        <a href="../html/logowanie.html">Logowanie</a>
-       
+ <nav>
+        <a href="../html/index.php">Strona Główna</a>
+        <a href="../html/aktualnosci.php">Aktualności</a>
+        <a href="../html/tabela.php">Tabela</a>
+        <a href="../html/historia.php">Historia</a>
+        <a href="../html/kontakt.php">Kontakt</a>
+       <?php
+        if ($_SESSION['login'] == ''){
+        echo '<a href="../html/logowanie.php">Logowanie</a>';
+        }
+        elseif($_SESSION['type'] == '5')
+        {
+            echo '<a href="../html/paneladmina.php">'. $_SESSION["login"] .'</a>';
+			echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
+        }
+        elseif($_SESSION['type'] == '1')
+        {
+            echo '<a href="../html/panelUzytkownika.php">'. $_SESSION["login"] .'</a>';
+            echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
+			
+        }
+       ?>
     </nav>
 
     <div class="adminKontakt">

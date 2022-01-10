@@ -58,9 +58,12 @@ header{
   background-color: white;
   margin: auto;
   width: 50%;
-  min-height: 300px;
+  min-height: 200px;
 }
-
+.aktualnosci_news{
+width: 60%;
+margin: auto;
+}
 .aktualnosci {
   font-size: 25px;
   text-align: center;
@@ -161,7 +164,17 @@ div.image{
   text-align: center;
   display: inline-block;
 }
-
+.tabelaTabela2 {
+  background-color: white;
+  width: 70%;
+  min-height: 100px;
+  color: black;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 250px;
+  text-align: center;
+  display: inline-block;
+}
 .tabelaTabela h2 {
   font-size: 30px;
 } 
