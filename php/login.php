@@ -42,7 +42,7 @@ if (!$link) {
 }
 
 if (!isset($_SESSION["login"])) {
-    echo "<nav><a href='../html/rejestracja.php'>Wróć do rejerestracji</a></nav> ";
+    echo "<nav><a href='../html/logowanie.php'>Wróć do logowania</a></nav> ";
 }
 
 aktualizujId($_SESSION["id"]);
