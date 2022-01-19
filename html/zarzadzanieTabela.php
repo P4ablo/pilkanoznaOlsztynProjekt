@@ -1,6 +1,7 @@
 <?php
 session_start();
 error_reporting(E_ERROR | E_PARSE);
+include '../php/funkcje.php';
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -14,6 +15,7 @@ error_reporting(E_ERROR | E_PARSE);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
     <a href="#" class="logo"><h1>pilkaolsztyn.pl</h1></a>
@@ -36,11 +38,32 @@ if ($_SESSION['login'] == '') {
 }
 ?>
     </nav>
-    <h1 class="dodajPostH1">Dodaj Post</h1>
-    <?php
-include '../php/funkcje.php';
+
+   <h1>Zarządzaj Tabelą</h1>
+
+   <h2 class="zarzadzajTabelaH2">Dodaj</h2>
+
+   <?php
 if ($_SESSION['type'] == '5') {
-    dodajPost();
+    dodajTabela();}
+?>
+
+
+
+   <h2 class="zarzadzajTabelaH2">Usuń</h2>
+
+  <?php
+if ($_SESSION['type'] == '5') {
+    usunTabela();
 }
 ?>
+
+   <h2 class="zarzadzajTabelaH2">Edytuj</h2>
+   <?php
+if ($_SESSION['type'] == '5') {
+    edytujTabela();
+}
+?>
+
+
 </body>

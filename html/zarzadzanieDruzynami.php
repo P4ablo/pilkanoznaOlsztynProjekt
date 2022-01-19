@@ -14,10 +14,11 @@ error_reporting(E_ERROR | E_PARSE);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
     <a href="#" class="logo"><h1>pilkaolsztyn.pl</h1></a>
- <nav>
+    <nav>
         <a href="../html/index.php">Strona Główna</a>
         <a href="../html/aktualnosci.php">Aktualności</a>
         <a href="../html/tabela.php">Tabela</a>
@@ -36,11 +37,14 @@ if ($_SESSION['login'] == '') {
 }
 ?>
     </nav>
-    <h1 class="dodajPostH1">Dodaj Post</h1>
+
+    <h1>Zarządzanie Drużyną</h1>
+
+
     <?php
 include '../php/funkcje.php';
 if ($_SESSION['type'] == '5') {
-    dodajPost();
-}
-?>
-</body>
+    edytujDruzyna();
+}?>
+
+   <button type="button" class="btnDodaj">Dodaj</button>

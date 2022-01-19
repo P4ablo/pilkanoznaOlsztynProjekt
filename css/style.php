@@ -44,7 +44,7 @@ div.feature h2 {
   margin-bottom: 100px;
   min-height: 100px;
   text-align: center;
-  
+
 }
 
 

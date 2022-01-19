@@ -25,40 +25,43 @@ error_reporting(E_ERROR | E_PARSE);
         <a href="../html/historia.php">Historia</a>
         <a href="../html/kontakt.php">Kontakt</a>
        <?php
-        if ($_SESSION['login'] == ''){
-        echo '<a href="../html/logowanie.php">Logowanie</a>';
-        }
-        elseif($_SESSION['type'] == '5')
-        {
-            echo '<a href="../html/paneladmina.php">'. $_SESSION["login"] .'</a>';
-			echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-        }
-        elseif($_SESSION['type'] == '1')
-        {
-            echo '<a href="../html/panelUzytkownika.php">'. $_SESSION["login"] .'</a>';
-            echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-			
-        }
-       ?>
+if ($_SESSION['login'] == '') {
+    echo '<a href="../html/logowanie.php">Logowanie</a>';
+} elseif ($_SESSION['type'] == '5') {
+    echo '<a href="../html/paneladmina.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+} elseif ($_SESSION['type'] == '1') {
+    echo '<a href="../html/panelUzytkownika.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+
+}
+?>
     </nav>
 
-<div class="tabelaTabela">  
-        <h2>Tabela</h2>  
+<div class="tabelaTabela">
+        <h2>Tabela</h2>
    <!--Style do pokaz tabele strzelcow i druzyn w style.php-->
     <?php
-    include '../php/funkcje.php'; 
-    pokazTabeleDruzyn();
-    
-    ?>
+include '../php/funkcje.php';
+pokazTabeleDruzyn();
+
+?>
     </div>
 
     <div class="strzelcyTabela">
         <h2>Strzelcy</h2>
         <?php
-            pokazTabeleStrzelcow();
-        ?>
-    
-  
-    </div>
+pokazTabeleStrzelcow();
+?>
 
+
+    </div>
+    </div>
+	     <div class="socials">
+        <h2>Kontakt</h2>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
 </body>

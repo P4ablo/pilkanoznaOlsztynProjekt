@@ -24,38 +24,39 @@ error_reporting(E_ERROR | E_PARSE);
         <a href="../html/historia.php">Historia</a>
         <a href="../html/kontakt.php">Kontakt</a>
        <?php
-        if ($_SESSION['login'] == ''){
-        echo '<a href="../html/logowanie.php">Logowanie</a>';
-        }
-        elseif($_SESSION['type'] == '5')
-        {
-            echo '<a href="../html/paneladmina.php">'. $_SESSION["login"] .'</a>';
-			echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-        }
-        elseif($_SESSION['type'] == '1')
-        {
-            echo '<a href="../html/panelUzytkownika.php">'. $_SESSION["login"] .'</a>';
-            echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-			
-        }
-       ?>
+if ($_SESSION['login'] == '') {
+    echo '<a href="../html/logowanie.php">Logowanie</a>';
+} elseif ($_SESSION['type'] == '5') {
+    echo '<a href="../html/paneladmina.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+} elseif ($_SESSION['type'] == '1') {
+    echo '<a href="../html/panelUzytkownika.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+
+}
+?>
     </nav>
     <div class="fotoUzy">
-        <img src="../img/img4.jpg" width="250" height="250" class="imgUzytkownik">
-    
+        <img src="../img/img4.png" width="250" height="250" class="imgUzytkownik">
+
     </div>
 
     <div class="daneUzytkownika">
     <?php
 include '../php/funkcje.php';
+aktualizujId($_SESSION["id"]);
 pokazDanePilkarza($_SESSION["id"]);
 ?>
-        
+
     </div>
 
-    
-    <br>
-    <a><button class="buttonUzy">Aktualizuj Dane</button></a>
 
-    <!-- TUTAJ DO ZROBIENIA RESZTA KODU -->
+    <br>
+    <?php
+
+uzytkownikZmienDane($_SESSION["id"]);
+?>
+    <!-- <a><button class="buttonUzy">Aktualizuj Dane</button></a> -->
+
+
 </body>

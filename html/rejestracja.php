@@ -24,30 +24,21 @@ error_reporting(E_ERROR | E_PARSE);
         <a href="../html/historia.php">Historia</a>
         <a href="../html/kontakt.php">Kontakt</a>
        <?php
-        if ($_SESSION['login'] == ''){
-        echo '<a href="../html/logowanie.php">Logowanie</a>';
-        }
-        elseif($_SESSION['type'] == '5')
-        {
-            echo '<a href="../html/paneladmina.php">'. $_SESSION["login"] .'</a>';
-			echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-        }
-        elseif($_SESSION['type'] == '1')
-        {
-            echo '<a href="../html/panelUzytkownika.php">'. $_SESSION["login"] .'</a>';
-            echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-			
-        }
-       ?>
-    </nav>
+if ($_SESSION['login'] == '') {
+    echo '<a href="../html/logowanie.php">Logowanie</a>';
+} elseif ($_SESSION['type'] == '5') {
+    echo '<a href="../html/paneladmina.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+} elseif ($_SESSION['type'] == '1') {
+    echo '<a href="../html/panelUzytkownika.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
 
-    <form class="box" action="" method="post">
-        <h1>Rejestracja</h1>
-        <input type="text" name="" placeholder="Imię">
-        <input type="text" name="" placeholder="Nazwisko">
-        <input type="text" name="" placeholder="E-mail">
-        <input type="password" name="" placeholder="Hasło">
-        <input type="password" name="" placeholder="Powtórz hasło">
-        <input type="submit" name="" value="Zarejestruj">
-    </form>
+}
+?>
+    </nav>
+    <?php
+include '../php/funkcje.php';
+registerUser();
+
+?>
 </body>

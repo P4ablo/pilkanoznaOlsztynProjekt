@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
   font-family: 'Oswald', sans-serif;
 }
 
-html{
+html {
   font-size: 10px;
   font-family: 'Oswald', sans-serif;
   background-color: black;
@@ -23,7 +23,7 @@ h1 {
   text-align: center;
 }
 
-nav{
+nav {
   margin: 20px auto;
   text-align: center;
   max-width: 1440px;
@@ -32,7 +32,7 @@ nav{
 
 
 
-nav a{
+nav a {
   font-size: 1.8rem;
   display: inline-block;
   font-family: 'Roboto';
@@ -45,7 +45,7 @@ nav a{
 }
 
 
-header{
+header {
   background-image: url(../img/img2.jpg);
   height: 40vh;
   background-size: cover;
@@ -60,16 +60,18 @@ header{
   width: 50%;
   min-height: 200px;
 }
-.aktualnosci_news{
-width: 60%;
-margin: auto;
+
+.aktualnosci_news {
+  width: 60%;
+  margin: auto;
 }
+
 .aktualnosci {
   font-size: 25px;
   text-align: center;
 }
 
-div.feature{
+div.feature {
   display: inline-block;
   width: 40%;
   margin-left: 120px;
@@ -82,9 +84,9 @@ div.feature h2 {
 }
 
 
-div.image{
+div.image {
   min-height: 200px;
-  background-color:black;
+  background-color: black;
   margin: 20px 30px;
 
 }
@@ -130,7 +132,7 @@ div.image{
   margin-bottom: 100px;
   min-height: 100px;
   text-align: center;
-  
+
 }
 
 .przycisk {
@@ -149,6 +151,9 @@ div.image{
   font-size: 16px;
   margin-left: 20px;
   border-radius: 50px;
+  cursor: pointer;
+
+
 }
 
 /* TABELA */
@@ -164,6 +169,7 @@ div.image{
   text-align: center;
   display: inline-block;
 }
+
 .tabelaTabela2 {
   background-color: white;
   width: 70%;
@@ -175,9 +181,10 @@ div.image{
   text-align: center;
   display: inline-block;
 }
+
 .tabelaTabela h2 {
   font-size: 30px;
-} 
+}
 
 .strzelcyTabela {
   width: 25%;
@@ -245,7 +252,7 @@ div.image{
   margin-bottom: 10px;
 }
 
-.wynajemKontakt{
+.wynajemKontakt {
   margin: auto;
   width: 50%;
   color: white;
@@ -266,7 +273,7 @@ div.image{
   margin-top: 5px;
 }
 
-.sedziowieKontakt{
+.sedziowieKontakt {
   margin: auto;
   width: 50%;
   color: white;
@@ -297,7 +304,7 @@ div.image{
   border-radius: 24px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: white;
   text-align: center;
 }
@@ -308,13 +315,13 @@ div.image{
   font-weight: 500;
 }
 
-.box input[type = "text"],.box input[type = "password"]{
+.box input[type="text"], .box input[type="password"] {
   border: 0;
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid black ;
+  border: 2px solid black;
   padding: 14px 10px;
   width: 200px;
   outline: none;
@@ -323,19 +330,20 @@ div.image{
   transition: 0.25s;
 }
 
-.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+
+.box input[type="text"]:focus, .box input[type="password"]:focus {
   width: 280px;
-  border-color: black ;
+  border-color: black;
 
 }
 
-.box input[type = "submit"]{
+.box input[type="submit"] {
   border: 0;
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid black ;
+  border: 2px solid black;
   padding: 14px 40px;
   outline: none;
   color: black;
@@ -344,7 +352,7 @@ div.image{
   cursor: pointer;
 }
 
-.box input[type = "submit"]:hover {
+.box input[type="submit"]:hover {
   background: white;
 }
 
@@ -365,7 +373,7 @@ a.signin {
   border-radius: 24px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: white;
   text-align: center;
 }
@@ -376,13 +384,13 @@ a.signin {
   font-weight: 500;
 }
 
-.box input[type = "text"],.box input[type = "password"]{
+.box input[type="text"], .box input[type="password"] {
   border: 0;
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid black ;
+  border: 2px solid black;
   padding: 14px 10px;
   width: 200px;
   outline: none;
@@ -391,19 +399,19 @@ a.signin {
   transition: 0.25s;
 }
 
-.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+.box input[type="text"]:focus, .box input[type="password"]:focus {
   width: 280px;
-  border-color: black ;
+  border-color: black;
 
 }
 
-.box input[type = "submit"]{
+.box input[type="submit"] {
   border: 0;
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid black ;
+  border: 2px solid black;
   padding: 14px 40px;
   outline: none;
   color: black;
@@ -412,7 +420,7 @@ a.signin {
   cursor: pointer;
 }
 
-.box input[type = "submit"]:hover {
+.box input[type="submit"]:hover {
   background: white;
 }
 
@@ -431,7 +439,7 @@ a.signin {
   width: 300px;
   margin-left: 50px;
   margin-bottom: 50px;
-  
+
 }
 
 /* PANEL UZYTKOWNIKA */
@@ -464,33 +472,88 @@ a.signin {
   margin-top: 20px;
 }
 
+.boxUzy {
+  width: 450px;
+  padding: 20px;
+  position: absolute;
+  border: 0px solid black;
+  border-radius: 24px;
+  top: 55%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background: white;
+  text-align: center;
+}
+
+.boxUzy h1 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.boxUzy input[type="text"], .boxUzy input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid black;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.boxUzy input[type="text"]:focus, .boxUzy input[type="password"]:focus {
+  width: 280px;
+  border-color: black;
+
+}
+
+.boxUzy input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid black;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.boxUzy input[type="submit"]:hover {
+  background: white;
+}
+
 /* DODAJ POST */
 
-.tekstPost {
-  background-color: white;
-  width: 75%;
-  height: 500px;
-  margin: auto;
+.dodajPostH1 {
+  text-align: center;
 }
 
-.tekstPost p {
-  font-size: 15px;
-  color: gray;
-  margin-left: 10px;
-  margin-top: 10px;
+.postDodajPost {
+  width: 100%;
+  height: 250px;
+  margin-top: 45px;
+
 }
 
-.buttonPost {
+.guzikDodajPost {
+  margin-left: 46%;
   background-color: white;
   color: black;
   border: 2px solid black;
   font-weight: bold;
   width: 200px;
   height: 50px;
-  margin-left: 1500px;
-  border-radius: 50px;
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 25px;
 }
 
 
@@ -547,6 +610,89 @@ a.signin {
   margin-bottom: 30px;
 }
 
+.guzikWyszukaj {
+  margin-left: 865px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
 
+.uzyImie {
+  color: white;
+  font-size: 20px;
+  margin-left: 865px;
+}
 
+.fname {
+  margin-left: 865px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.lname {
+  margin-left: 865px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ZARZĄDZANIE TABELĄ  */
+
+.zarzadzajTabelaH2 {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tabela {
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+  font-size: 20px;
+  width: 50%;
+  margin-bottom: 20px;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+.btnDodaj {
+  color: white;
+  font-size: 20px;
+  background-color: green;
+  width: 5%;
+  border-radius: 25px;
+  margin-left: 70%;
+}
+
+.btnDodajHistoria {
+  color: white;
+  font-size: 20px;
+  background-color: green;
+  width: 5%;
+  border-radius: 25px;
+  margin-left: 30%;
+}
+
+.btnUsun {
+  font-size: 20px;
+  background-color: red;
+
+  /* width: 5%; */
+}
+
+.btnEdytuj {
+  font-size: 20px;
+  background-color: yellow;
+}

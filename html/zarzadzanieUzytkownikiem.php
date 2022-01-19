@@ -24,29 +24,29 @@ error_reporting(E_ERROR | E_PARSE);
         <a href="../html/historia.php">Historia</a>
         <a href="../html/kontakt.php">Kontakt</a>
        <?php
-        if ($_SESSION['login'] == ''){
-        echo '<a href="../html/logowanie.php">Logowanie</a>';
-        }
-        elseif($_SESSION['type'] == '5')
-        {
-            echo '<a href="../html/paneladmina.php">'. $_SESSION["login"] .'</a>';
-			echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-        }
-        elseif($_SESSION['type'] == '1')
-        {
-            echo '<a href="../html/panelUzytkownika.php">'. $_SESSION["login"] .'</a>';
-            echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-			
-        }
-       ?>
+if ($_SESSION['login'] == '') {
+    echo '<a href="../html/logowanie.php">Logowanie</a>';
+} elseif ($_SESSION['type'] == '5') {
+    echo '<a href="../html/paneladmina.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+} elseif ($_SESSION['type'] == '1') {
+    echo '<a href="../html/panelUzytkownika.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+
+}
+?>
     </nav>
 
-    <h1 class="h1WysUzy">Wyszukaj użytkownika:</h1>
-    <a><button class="buttonWys"></button></a>
-    
-    <h1 class="h1WysUzy">Użytkownik Marek</h1>
-    <a><button class="buttonWys">Zmień hasło</button></a>
-    <a><button class="buttonWys">Usuń z drużyny</button></a>
-    <a><button class="buttonWys">Zablokuj</button></a>
+    <h1 class="h1WysUzy">Zarządzaj Użytkownikiem:</h1>
+    <?php
+include '../php/funkcje.php';
+if ($_SESSION['type'] == '5') {
 
+    edytujUzytkownika();
+}?>
+<h1 class="h1WysUzy">Zarządzaj Piłkarzem:</h1>
+    <?php
+if ($_SESSION['type'] == '5') {
+    edytujPilkarza();
+}?>
 </body>

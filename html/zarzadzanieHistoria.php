@@ -36,11 +36,41 @@ if ($_SESSION['login'] == '') {
 }
 ?>
     </nav>
-    <h1 class="dodajPostH1">Dodaj Post</h1>
+
+    <h1>Zarządzanie Historią</h1>
+
+    <h2 class="zarzadzajTabelaH2">Dodaj Drużynę</h2>
     <?php
 include '../php/funkcje.php';
 if ($_SESSION['type'] == '5') {
-    dodajPost();
+    dodajhistoriaDruzyna();
 }
 ?>
-</body>
+
+   <h2 class="zarzadzajTabelaH2">Edytuj Drużynę</h2>
+
+   <?php
+
+if ($_SESSION['type'] == '5') {
+    edytujhistoriaDruzyna();
+}
+?>
+
+   <h2 class="zarzadzajTabelaH2">Dodaj Strzelca</h2>
+
+   <?php
+
+if ($_SESSION['type'] == '5') {
+    dodajhistoriaStrzelcow();
+}
+?>
+
+
+   <h2 class="zarzadzajTabelaH2">Edytuj Strzelca</h2>
+
+   <?php
+
+if ($_SESSION['type'] == '5') {
+    edytujhistoriaStrzelcow();
+}
+?>

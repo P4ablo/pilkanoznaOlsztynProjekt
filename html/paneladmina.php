@@ -23,21 +23,17 @@ session_start();
         <a href="../html/historia.php">Historia</a>
         <a href="../html/kontakt.php">Kontakt</a>
        <?php
-        if ($_SESSION['login'] == ''){
-        echo '<a href="../html/logowanie.php">Logowanie</a>';
-        }
-        elseif($_SESSION['type'] == '5')
-        {
-            echo '<a href="../html/paneladmina.php">'. $_SESSION["login"] .'</a>';
-			echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-        }
-        elseif($_SESSION['type'] == '1')
-        {
-            echo '<a href="../html/panelUzytkownika.php">'. $_SESSION["login"] .'</a>';
-            echo '<a href="../php/logout.php">'. 'Wyloguj' .'</a>';
-			
-        }
-       ?>
+if ($_SESSION['login'] == '') {
+    echo '<a href="../html/logowanie.php">Logowanie</a>';
+} elseif ($_SESSION['type'] == '5') {
+    echo '<a href="../html/paneladmina.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+} elseif ($_SESSION['type'] == '1') {
+    echo '<a href="../html/panelUzytkownika.php">' . $_SESSION["login"] . '</a>';
+    echo '<a href="../php/logout.php">' . 'Wyloguj' . '</a>';
+
+}
+?>
     </nav>
 
     <h1 class="h1Admin">Panel Administratora</h1>
@@ -46,6 +42,6 @@ session_start();
         <a href="zarzadzanieTabela.php"><button class="button">Tabela</button></a><br>
         <a href="zarzadzanieHistoria.php"><button class="button">Historia</button></a><br>
         <a href="zarzadzanieDruzynami.php"><button class="button">Zarządzanie Drużynami</button></a><br>
-        <a href="zarzadzanieUzytkownikiem.php"><button class="button">Zarządzaj Zawodnikiem</button></a><br>
+        <a href="zarzadzanieUzytkownikiem.php"><button class="button">Zarządzaj Użytkownikiem</button></a><br>
     </div>
 </body>
