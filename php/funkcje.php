@@ -35,10 +35,10 @@ function pokazTabeleDruzyn()
         $query = "SELECT * FROM druzyny LIMIT 100;";
         $result = $link->query($query);
         if ($result->num_rows > 0) {
-            echo ("<table class='tabela-druzyny'>");
+            echo ("<table class='tabela-druzyny' >");
             echo ("<tr><th>Lp.</th><th>Drużyna</th><th>M.</th><th>Pkt.</th><th>Z.</th><th>R.</th><th>P.</th><th>Bramki.</th></tr>");
             while ($row = $result->fetch_assoc()) {
-                echo "<tr>";
+                echo "<tr >";
                 echo "<td>" . $row["Lp"] . "</td>";
                 echo "<td>" . $row["Druzyna"] . "</td>";
                 echo "<td>" . $row["Mecze"] . "</td>";
@@ -254,7 +254,7 @@ function dodajTabela()
         </tr>
         ');
     echo "</table>";
-    echo '<button type="submit" class="btnDodaj">Dodaj</button>';
+    echo '<button type="submit" class="btnDodajtab">Dodaj</button>';
     echo '</form>';
     $a = $_POST['1'];
     $b = $_POST['2'];
@@ -295,7 +295,7 @@ function usunTabela()
             echo "<tr>";
             echo "<td>" . $row['Lp'] . "</td>";
             echo "<td>" . $row['Druzyna'] . "</td>";
-            echo "<td><button type='submit' class='btnUsun'>Usuń</button></td>";
+            echo "<td><center><button type='submit' class='btnUsun'>Usuń</button></center></td>";
             echo "</tr>";
             echo "<input type = 'hidden' name = 'deletepageId' value = '$row[idDruzyny]' /></form>";
         }

@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 /* STRONA GŁÓWNA */
 
 .logo {
@@ -657,7 +659,8 @@ a.signin {
   background-color: white;
   border: 3px solid black;
   font-size: 20px;
-  width: 50%;
+  min-width: 40%;
+  max-width: 60%;
   margin-bottom: 20px;
 
 }
@@ -673,9 +676,16 @@ td, th {
   background-color: green;
   width: 5%;
   border-radius: 25px;
-  margin-left: 70%;
+  margin-left: 60%;
 }
-
+.btnDodajtab {
+  color: white;
+  font-size: 20px;
+  background-color: green;
+  width: 5%;
+  border-radius: 25px;
+  margin-left: 50%;
+}
 .btnDodajHistoria {
   color: white;
   font-size: 20px;

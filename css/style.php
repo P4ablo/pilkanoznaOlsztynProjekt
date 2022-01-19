@@ -56,6 +56,7 @@ div.feature h2 {
 
 .tabela-druzyny{
     width:98%;
+    
 }
 .tabela-druzyny, .tabela-druzyny th,.tabela-druzyny td {
     border: 1px solid black;
@@ -63,12 +64,14 @@ div.feature h2 {
     border-collapse: collapse;
     margin-left:1%;
     text-align:center;
+   
 
   }
 
 
-
-
+table.tabela-druzyny tr td, th{
+  font-size: 20px;
+}
 
 
 
