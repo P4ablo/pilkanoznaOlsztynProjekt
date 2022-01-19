@@ -58,5 +58,9 @@ uzytkownikZmienDane($_SESSION["id"]);
 ?>
     <!-- <a><button class="buttonUzy">Aktualizuj Dane</button></a> -->
 
+    <?php
+
+platnosc($_SESSION["id"]);
+?>
 
 </body>

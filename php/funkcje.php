@@ -823,3 +823,24 @@ function uzytkownikZmienDane($id)
 
     mysqli_close($link);
 }
+function platnosc($id)
+{
+    include "cfg.php";
+    if ($link) {
+        $query = "SELECT * FROM druzyny WHERE Kapitan=$id LIMIT 1;";
+        $result = $link->query($query);
+        if ($result->num_rows > 0) {
+           
+            echo ("<center><h1>Kapitan Drużyny<br>Zapłać wpisowe </h1><a href='#'><img src='../img/img5.png'></a></center>");
+           
+        }
+        else{
+            echo "";
+        }
+        mysqli_close($link);
+    }
+    if (!$link) {
+        return "<br>brak połączenia z bazą<br>";
+    }
+
+}
